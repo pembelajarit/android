@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.sensor_accelerometer"
+    namespace = "com.example.testing"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.sensor_accelerometer"
+        applicationId = "com.example.testing"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -25,9 +25,6 @@ android {
                 "proguard-rules.pro"
             )
         }
-    }
-    buildFeatures {
-        viewBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -48,5 +45,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(libs.mpAndroidChart)
 }
