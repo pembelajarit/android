@@ -82,6 +82,22 @@ class Square : Drawable {
     }
 }
 
+// interface2
+interface A {
+    fun hello() = println("Hello from A")
+}
+
+interface B {
+    fun hello() = println("Hello from B")
+}
+
+class C : A, B {
+    override fun hello() {
+        super<A>.hello()    // pilih A
+        super<B>.hello()    // pilih B
+    }
+}
+
 fun main() {
     val c1 = Car()
     c1.brand = "Toyota"
@@ -134,4 +150,7 @@ fun main() {
 
     val s: Drawable = Square()
     s.draw()
+
+    val cc = C()
+    cc.hello()
 }
