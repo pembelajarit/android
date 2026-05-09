@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F0F4F8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📏 Proximity Sensor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1A202C"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="JARAK OBJEK" android:textSize="11sp" android:textColor="#A0AEC0"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView android:id="@+id/tvDistance" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Jarak: - cm"
+                android:textSize="18sp" android:textColor="#2D3748" android:layout_marginBottom="8dp"/>
+
+            <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Mendeteksi..."
+                android:textSize="24sp" android:textColor="#2D3748" android:layout_marginBottom="8dp"/>
+
+            <TextView android:id="@+id/tvInfo" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Memuat info sensor..."
+                android:textSize="13sp" android:textColor="#A0AEC0"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="KEGUNAAN UMUM" android:textSize="11sp" android:textColor="#A0AEC0"
+                android:layout_marginBottom="8dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="📞  Matikan layar saat telepon" android:textSize="13sp" android:textColor="#4A5568"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🤚  Deteksi telapak tangan dekat HP" android:textSize="13sp" android:textColor="#4A5568"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="💡  Hemat baterai layar" android:textSize="13sp" android:textColor="#4A5568"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
